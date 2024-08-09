@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor & História</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header, footer {
+            background-color: #f4f4f4;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+        nav a:hover {
+            background: #575757;
+        }
+        .banner img {
+            width: 100%;
+            height: auto;
+        }
+        .section {
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .menu-item img {
+            width: 100px;
+            height: auto;
+            margin-right: 10px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #575757;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Sabor & História</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">Sobre Nós</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Galeria</a>
+            <a href="#events">Eventos</a>
+            <a href="#reservations">Reservas</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contato</a>
+        </nav>
+    </div>
+</header>
+
+<section id="home" class="banner">
+    <img src="https://via.placeholder.com/1200x400" alt="Imagem do Restaurante">
+</section>
+
+<section id="about" class="section container">
+    <h2>Sobre Nós</h2>
+    <p>Bem-vindo ao Sabor & História! Conheça nossa história e a equipe que faz tudo acontecer.</p>
+    <img src="https://via.placeholder.com/600x400" alt="Equipe do Restaurante">
+    <h3>Nossa Equipe</h3>
+    <p>Conheça nossos chefs e equipe dedicada.</p>
+</section>
+
+<section id="menu" class="section container">
+    <h2>Menu</h2>
+    <div class="menu-item">
+        <img src="https://via.placeholder.com/100x100" alt="Prato Principal">
+        <div>
+            <h3>Prato Principal</h3>
+            <p>Descrição do prato principal.</p>
+            <p>Preço: R$ 50,00</p>
+        </div>
+    </div>
+    <!-- Adicione mais itens de menu conforme necessário -->
+</section>
+
+<section id="gallery" class="section container">
+    <h2>Galeria</h2>
+    <div class="gallery">
+        <img src="https://via.placeholder.com/600x400" alt="Prato 1">
+        <img src="https://via.placeholder.com/600x400" alt="Prato 2">
+        <img src="https://via.placeholder.com/600x400" alt="Ambiente">
+    </div>
+</section>
+
+<section id="events" class="section container">
+    <h2>Eventos e Promoções</h2>
+    <p>Confira nossos próximos eventos e promoções especiais!</p>
+    <!-- Adicione detalhes sobre eventos e promoções -->
+</section>
+
+<section id="reservations" class="section container">
+    <h2>Reservas</h2>
+    <form action="#" method="post" class="contact-form">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+       
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+       
+        <label for="phone">Telefone:</label>
+        <input type="tel" id="phone" name="phone">
+       
+        <label for="date">Data e Hora:</label>
+        <input type="datetime-local" id="date" name="date" required>
+       
+        <label for="guests">Número de Pessoas:</label>
+        <input type="number" id="guests" name="guests" required>
+       
+        <button type="submit">Reservar</button>
+    </form>
+</section>
+
+<section id="blog" class="section container">
+    <h2>Blog</h2>
+    <p>Leia sobre gastronomia, receitas e mais!</p>
+    <!-- Adicione postagens do blog -->
+</section>
+
+<section id="contact" class="section container">
+    <h2>Contato</h2>
+    <form action="#" method="post" class="contact-form">
+        <label for="contact-name">Nome:</label>
+        <input type="text" id="contact-name" name="contact-name" required>
+       
+        <label for="contact-email">Email:</label>
+        <input type="email" id="contact-email" name="contact-email" required>
+       
+        <label for="contact-message">Mensagem:</label>
+        <textarea id="contact-message" name="contact-message" rows="4" required></textarea>
+       
+        <button type="submit">Enviar</button>
+    </form>
+    <p>Endereço: Rua Exemplo, 123 - Cidade, Estado</p>
+    <p>Telefone: (11) 1234-5678</p>
+    <p>Email: contato@saborehistoria.com.br</p>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Sabor & História. Todos os direitos reservados.</p>
+        <p><a href="#home">Voltar ao topo</a></p>
+    </div>
+</footer>
+
+</body>
+</html>
